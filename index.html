@@ -55,6 +55,7 @@ a:hover{text-decoration:underline}
 .nav a:hover{color:var(--fg);text-decoration:none}
 .nav a[aria-current="page"]{color:var(--fg);font-weight:700}
 @media(max-width:640px){.nav{gap:14px;font-size:13.5px}.nav .hide-s{display:none}}
+@media(max-width:560px){.bar-in{flex-wrap:wrap;row-gap:6px;padding-top:10px;padding-bottom:10px}.nav{width:100%;gap:18px}.mark span{font-size:16px}}
 
 /* hero */
 .hero{padding-top:88px;padding-bottom:64px;border-bottom:1px solid var(--line-soft)}
@@ -87,12 +88,12 @@ section:last-of-type{border-bottom:0}
 .pillar p{margin:0;color:var(--muted);font-size:15.5px}
 
 /* podglądy */
-.shots{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.shots{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;align-items:start}
 @media(max-width:860px){.shots{grid-template-columns:1fr}}
 .shot{margin:0;background:var(--bg-soft);border:1px solid var(--line);border-radius:14px;padding:14px}
 .shot img{display:block;width:100%;height:auto;border-radius:9px}
 .shot figcaption{margin:12px 2px 2px;font:700 11.5px/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#cbd5e1}
-.shot-narrow{max-width:390px;justify-self:center;width:100%}
+.shot-narrow{max-width:360px;justify-self:center;width:100%}
 
 /* instalacja */
 .steps{list-style:none;counter-reset:step;margin:0;padding:0;display:grid;gap:12px;max-width:76ch}
